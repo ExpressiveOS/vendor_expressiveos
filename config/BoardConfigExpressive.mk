@@ -10,4 +10,3 @@ BUILD_BROKEN_SRC_DIR_RW_ALLOWLIST := $(abspath .repo/manifests.git)
 BOARD_USES_FULL_RECOVERY_IMAGE ?= true
 
 -include vendor/expressiveos/config/BoardConfigReservedSize.mk
-include vendor/expressiveos/sepolicy/SEPolicy.mk
