@@ -1,0 +1,13 @@
+//
+// Copyright (C) 2026 ExpressiveOS
+// SPDX-License-Identifier: Apache-2.0
+//
+
+vintf_compatibility_matrix {
+    name: "framework_compatibility_matrix.eos.xml",
+    stem: "compatibility_matrix.eos.xml",
+    srcs: [
+        "compatibility_matrix.eos.xml",
+    ],
+    product_specific: true,
+}

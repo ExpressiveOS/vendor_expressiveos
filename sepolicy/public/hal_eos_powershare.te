@@ -1,0 +1,4 @@
+# Binder IPC from client to server
+binder_call(hal_eos_powershare_client, hal_eos_powershare_server)
+
+hal_attribute_service(hal_eos_powershare, hal_eos_powershare_service)

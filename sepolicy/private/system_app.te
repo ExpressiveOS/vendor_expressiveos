@@ -1,0 +1,34 @@
+# Allow Settings to read ExpressiveOS version & vendor SPL
+get_prop(system_app, custom_version_prop)
+get_prop(system_app, vendor_security_patch_level_prop)
+
+# ExpressiveOS HALs
+hal_client_domain(system_app, hal_eos_health)
+hal_client_domain(system_app, hal_eos_touch)
+
+# ExpressiveOS Integrity service (metadata summary only; NO direct file read on eos_integrity_data_file)
+allow system_app eos_integrity_service:service_manager find;
+
+# Recovery update prop & default navbar prop
+set_prop(system_app, recovery_update_prop)
+get_prop(system_app, qemu_hw_prop)
+
+# Columbus ApSensor property
+allow system_app system_prop:property_service set;
+
+# Boot animation
+allow system_app bootanim_data_file:dir create_dir_perms;
+allow system_app bootanim_data_file:file create_file_perms;
+set_prop(system_app, bootanim_system_prop)
+
+# GameSpace process group
+allow system_app cgroup:dir search;
+allow system_app cgroup:file rw_file_perms;
+
+# Sandbox
+allow system_app ax_sandbox_vault_file:dir create_dir_perms;
+allow system_app ax_sandbox_vault_file:file create_file_perms;
+allow system_app system_data_file:dir r_dir_perms;
+allow system_app system_data_file:file r_file_perms;
+allow system_app system_userdir_file:dir r_dir_perms;
+allow system_app system_userdir_file:file r_file_perms;

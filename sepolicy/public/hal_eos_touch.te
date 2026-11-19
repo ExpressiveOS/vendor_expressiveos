@@ -1,0 +1,4 @@
+# Binder IPC from client to server
+binder_call(hal_eos_touch_client, hal_eos_touch_server)
+
+hal_attribute_service(hal_eos_touch, hal_eos_touch_service)

@@ -1,0 +1,4 @@
+# Binder IPC from client to server
+binder_call(hal_eos_health_client, hal_eos_health_server)
+
+hal_attribute_service(hal_eos_health, hal_eos_health_service)

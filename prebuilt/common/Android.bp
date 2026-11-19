@@ -1,0 +1,23 @@
+//
+// Copyright (C) 2026 ExpressiveOS
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc {
+    name: "sensitive_pn.xml",
+    product_specific: true,
+    src: "etc/sensitive_pn.xml",
+}
+
+prebuilt_etc_xml {
+    name: "eos-component-overrides.xml",
+    product_specific: true,
+    src: "etc/eos-component-overrides.xml",
+    sub_dir: "sysconfig",
+}
+
+prebuilt_etc {
+    name: "Changelog.txt",
+    product_specific: true,
+    src: "etc/Changelog.txt",
+}

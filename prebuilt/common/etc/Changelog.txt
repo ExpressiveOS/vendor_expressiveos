@@ -1,0 +1,4 @@
+# ExpressiveOS 2.0
+
+ExpressiveOS 2.0 is built directly on Google's Android Open Source Project (AOSP 17).
+Release notes are populated at pack time from expressiveos-cheetah/release-notes/.

@@ -1,0 +1,45 @@
+allow system_server storage_stub_file:dir getattr;
+
+add_service(system_server, ax_sandbox_service);
+add_service(system_server, boost_framework_service);
+add_service(system_server, eos_integrity_service);
+add_service(system_server, game_space_service);
+add_service(system_server, lmo_freeform_service);
+add_service(system_server, refresh_rate_manager_service);
+add_service(system_server, theme_engine_service);
+
+# CachedAppOptimizer
+allow system_server audioserver_tmpfs:file rw_file_perms;
+allow system_server tmpfs:file rw_file_perms;
+allow system_server zygote_tmpfs:file rw_file_perms;
+
+# Use ExpressiveOS HALs
+hal_client_domain(system_server, hal_eos_health)
+hal_client_domain(system_server, hal_eos_powershare)
+hal_client_domain(system_server, hal_eos_touch)
+
+# Camera & xtra properties
+get_prop(system_server, camera2_extensions_prop)
+set_prop(system_server, xtra_control_prop)
+
+# Pocket judge
+allow system_server pocket_service:service_manager { add find };
+allow system_server pocket_judge_sysfs:dir search;
+allow system_server pocket_judge_sysfs:file rw_file_perms;
+
+# WebView / app zygote
+allow system_server webview_zygote:process setsched;
+allow system_server app_zygote:process setsched;
+
+# Boot animation
+allow system_server bootanim_data_file:dir create_dir_perms;
+allow system_server bootanim_data_file:file create_file_perms;
+
+# Sandbox
+allow system_server ax_sandbox_vault_file:dir create_dir_perms;
+allow system_server ax_sandbox_vault_file:file create_file_perms;
+
+# ExpressiveOS Integrity store & Play Integrity staging props
+allow system_server eos_integrity_data_file:dir create_dir_perms;
+allow system_server eos_integrity_data_file:file create_file_perms;
+set_prop(system_server, pif_prop)

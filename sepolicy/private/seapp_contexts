@@ -1,0 +1,2 @@
+# ExpressiveOS Updater
+user=_app isPrivApp=true seinfo=platform name=org.expressiveos.updater domain=updater_app type=app_data_file levelFrom=user

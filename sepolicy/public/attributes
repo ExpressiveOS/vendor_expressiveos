@@ -1,0 +1,4 @@
+# ExpressiveOS HALs
+hal_attribute_eos(eos_health)
+hal_attribute_eos(eos_powershare)
+hal_attribute_eos(eos_touch)

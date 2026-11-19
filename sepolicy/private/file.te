@@ -1,0 +1,14 @@
+type sdcard_posix, sdcard_type, sdcard_posix_contextmount_type, fs_type, mlstrustedobject;
+type sysfs_perdev_minors, fs_type, sysfs_type;
+
+# Pocket judge
+type pocket_judge_sysfs, fs_type, sysfs_type;
+
+# Sandbox
+type ax_sandbox_vault_file, file_type, data_file_type, core_data_file_type;
+
+# Boot animation hints
+type bootanim_metadata_file, file_type;
+
+# ExpressiveOS Integrity (PIF / keybox / target.txt)
+type eos_integrity_data_file, file_type, data_file_type, core_data_file_type;

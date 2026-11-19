@@ -1,0 +1,8 @@
+dontaudit bootanim system_data_file:dir search;
+
+allow bootanim bootanim_data_file:dir create_dir_perms;
+allow bootanim bootanim_data_file:file create_file_perms;
+
+# Read the copies of persist.sys.bootanim.name and persist.bootanim.color1..4 that init keeps
+# in /metadata/bootanim, to pick the animation and its colors before /data is mounted.
+r_dir_file(bootanim, bootanim_metadata_file)

@@ -1,0 +1,56 @@
+# Boot animation
+persist.sys.bootanimation_style                       u:object_r:bootanim_system_prop:s0 exact int
+persist.sys.bootanim.name                             u:object_r:bootanim_system_prop:s0 exact string
+
+# Bluetooth
+bluetooth.hci.disabled_commands                       u:object_r:bluetooth_config_prop:s0
+bluetooth.hci.erroneous_data_reporting.enabled        u:object_r:bluetooth_config_prop:s0
+
+# Camera
+persist.vendor.camera.privapp.list                    u:object_r:camera2_extensions_prop:s0
+vendor.camera.aux.packageexcludelist                  u:object_r:camera2_extensions_prop:s0
+vendor.camera.aux.packagelist                         u:object_r:camera2_extensions_prop:s0
+vendor.camera.skip_unconfigure.packagelist            u:object_r:camera2_extensions_prop:s0
+
+# ExpressiveOS version & identity
+ro.expressiveos.version                               u:object_r:custom_version_prop:s0
+ro.expressiveos.display.version                       u:object_r:custom_version_prop:s0
+ro.expressiveos.build.version                         u:object_r:custom_version_prop:s0
+ro.expressiveos.build.type                            u:object_r:custom_version_prop:s0
+ro.expressiveos.device                                u:object_r:custom_version_prop:s0
+
+# Columbus ApSensor
+persist.columbus.use_ap_sensor                        u:object_r:system_prop:s0
+
+# Compact HUN
+persist.sys.compact_heads_up_notification.always_show u:object_r:system_prop:s0
+
+# Force multi-window behavior
+ro.config.force_multi_window                          u:object_r:exported_config_prop:s0 exact bool
+
+# Recovery
+ro.recovery.batteryless                               u:object_r:recovery_config_prop:s0 exact bool
+ro.recovery.supported_fs                              u:object_r:recovery_config_prop:s0 exact string
+ro.minui.blacklist_input_devices                      u:object_r:recovery_config_prop:s0
+ro.minui.default_touch_rotation                       u:object_r:recovery_config_prop:s0
+persist.vendor.recovery_update                        u:object_r:recovery_update_prop:s0
+
+# SurfaceFlinger
+ro.surface_flinger.blur_disabled_by_default           u:object_r:surfaceflinger_prop:s0 exact bool
+ro.surface_flinger.use_legacy_vds_refresh_pacing      u:object_r:surfaceflinger_prop:s0 exact bool
+
+# xtra-daemon control
+persist.sys.xtra-daemon.enabled                       u:object_r:xtra_control_prop:s0 exact bool
+
+# Screen mirroring disablement
+persist.sysui.disable_mirroring_confirmation_dialog   u:object_r:hdmi_config_prop:s0
+
+# USB UVC
+ro.usb.uvc.disable_video_encode_flag                  u:object_r:usb_uvc_config_prop:s0
+vendor.usb.uvc.payload_transfer_size                  u:object_r:usb_uvc_config_prop:s0
+
+# Legacy public build fingerprint
+ro.product.fingerprint                                u:object_r:build_prop:s0 exact string
+
+# Play Integrity staging props read by bionic in DroidGuard
+persist.sys.pif.                                      u:object_r:pif_prop:s0

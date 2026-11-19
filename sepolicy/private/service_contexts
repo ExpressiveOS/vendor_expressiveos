@@ -1,0 +1,13 @@
+ax_sandbox                                             u:object_r:ax_sandbox_service:s0
+boost_framework                                        u:object_r:boost_framework_service:s0
+eos_integrity                                          u:object_r:eos_integrity_service:s0
+game_space                                             u:object_r:game_space_service:s0
+lmo_freeform                                           u:object_r:lmo_freeform_service:s0
+pocket                                                 u:object_r:pocket_service:s0
+refresh_rate_ext                                       u:object_r:refresh_rate_manager_service:s0
+theme_engine                                           u:object_r:theme_engine_service:s0
+
+# ExpressiveOS HALs
+vendor.expressiveos.health.IChargingControl/default    u:object_r:hal_eos_health_service:s0
+vendor.expressiveos.powershare.IPowerShare/default     u:object_r:hal_eos_powershare_service:s0
+vendor.expressiveos.touch.IGloveMode/default           u:object_r:hal_eos_touch_service:s0
