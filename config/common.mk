@@ -6,6 +6,9 @@
 
 # 1. Kit staging hook (bootanimation, wallpapers, Expressive Launcher, ViPER4Android)
 $(call inherit-product-if-exists, vendor/extra/product.mk)
+ifneq ($(TARGET_BOOTANIMATION),)
+PRODUCT_PACKAGES += bootanimation.zip
+endif
 
 # 2. ExpressiveOS extras & Basic Call Recorder
 $(call inherit-product, vendor/extras/expressiveos.mk)

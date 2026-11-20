@@ -17,8 +17,6 @@ $(LOCAL_BUILT_MODULE): $(TARGET_BOOTANIMATION)
 	@mkdir -p $(dir $@)
 	@cp $(TARGET_BOOTANIMATION) $@
 
-include $(CLEAR_VARS)
-
 BOOTANIMATION_SYMLINK := $(TARGET_OUT_PRODUCT)/media/bootanimation-dark.zip
 $(BOOTANIMATION_SYMLINK): $(LOCAL_INSTALLED_MODULE)
 	@mkdir -p $(dir $@)
