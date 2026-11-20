@@ -1,1 +1,5 @@
 allow init sysfs_batteryinfo:file rw_file_perms;
+
+# Allow init to create and update /metadata/bootanim hints (expressiveos-bootanim-hint.rc)
+allow init bootanim_metadata_file:dir create_dir_perms;
+allow init bootanim_metadata_file:file create_file_perms;
