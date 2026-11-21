@@ -13,22 +13,18 @@ allow system_app eos_integrity_service:service_manager find;
 set_prop(system_app, recovery_update_prop)
 get_prop(system_app, qemu_hw_prop)
 
-# Columbus ApSensor property
-allow system_app system_prop:property_service set;
+# ExpressiveOS user-configurable system & emoji properties
+set_prop(system_app, eos_system_prop)
+set_prop(system_app, eos_emoji_prop)
 
 # Boot animation
 allow system_app bootanim_data_file:dir create_dir_perms;
 allow system_app bootanim_data_file:file create_file_perms;
 set_prop(system_app, bootanim_system_prop)
 
-# GameSpace process group
+# GameSpace process group (AOSP system_app.te already grants cgroup:file w_file_perms)
 allow system_app cgroup:dir search;
-allow system_app cgroup:file rw_file_perms;
 
 # Sandbox
 allow system_app ax_sandbox_vault_file:dir create_dir_perms;
 allow system_app ax_sandbox_vault_file:file create_file_perms;
-allow system_app system_data_file:dir r_dir_perms;
-allow system_app system_data_file:file r_file_perms;
-allow system_app system_userdir_file:dir r_dir_perms;
-allow system_app system_userdir_file:file r_file_perms;

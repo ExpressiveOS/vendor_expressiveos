@@ -19,11 +19,18 @@ ro.expressiveos.build.version                         u:object_r:custom_version_
 ro.expressiveos.build.type                            u:object_r:custom_version_prop:s0
 ro.expressiveos.device                                u:object_r:custom_version_prop:s0
 
-# Columbus ApSensor
-persist.columbus.use_ap_sensor                        u:object_r:system_prop:s0
+# ExpressiveOS user-configurable system properties
+# NOTE: persist.sys.expressiveos.launcher is exact-matched so persist.sys.expressiveos.debug_enabled
+# remains isolated from system_app/platform_app.
+persist.columbus.use_ap_sensor                        u:object_r:eos_system_prop:s0 exact string
+persist.sys.compact_heads_up_notification.always_show u:object_r:eos_system_prop:s0 exact string
+persist.sys.expressiveos.launcher                     u:object_r:eos_system_prop:s0 exact string
+persist.sys.pairip.activity.block                     u:object_r:eos_system_prop:s0 exact string
+persist.sys.touchboost_enable                         u:object_r:eos_system_prop:s0 exact string
+persist.sys.wallpaper.                                u:object_r:eos_system_prop:s0
 
-# Compact HUN
-persist.sys.compact_heads_up_notification.always_show u:object_r:system_prop:s0
+# ExpressiveOS emoji style (read by SystemFonts across app processes)
+persist.sys.ax_emoji_style                            u:object_r:eos_emoji_prop:s0 exact string
 
 # Force multi-window behavior
 ro.config.force_multi_window                          u:object_r:exported_config_prop:s0 exact bool

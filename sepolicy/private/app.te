@@ -1,0 +1,2 @@
+# SystemFonts reads persist.sys.ax_emoji_style in app processes
+get_prop(appdomain, eos_emoji_prop)

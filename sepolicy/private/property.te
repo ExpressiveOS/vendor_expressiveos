@@ -6,3 +6,7 @@ system_internal_prop(pif_prop)
 
 # Recovery update
 system_internal_prop(recovery_update_prop)
+
+# ExpressiveOS user-configurable system properties (wallpaper, compact HUN, launcher switch,
+# Columbus ApSensor, GameSpace touchboost, pairip activity block)
+system_internal_prop(eos_system_prop)

@@ -3,3 +3,6 @@ system_vendor_config_prop(usb_uvc_config_prop)
 
 # xtra-daemon control
 system_restricted_prop(xtra_control_prop)
+
+# ExpressiveOS emoji style (read by SystemFonts in app processes & zygote, set by Settings)
+system_restricted_prop(eos_emoji_prop)

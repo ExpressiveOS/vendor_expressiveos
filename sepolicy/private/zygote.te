@@ -1,1 +1,2 @@
 allow zygote self:capability sys_nice;
+get_prop(zygote, eos_emoji_prop)
