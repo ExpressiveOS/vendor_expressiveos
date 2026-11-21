@@ -121,13 +121,17 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 
 PRODUCT_PRODUCT_PROPERTIES += \
     is_expressive_design_enabled=true \
-    persist.sys.disable_rescue=true \
-    ro.control_privapp_permissions=log \
+    ro.control_privapp_permissions=enforce \
     net.tethering.noprovisioning=true \
     ro.support_one_handed_mode?=true \
     ro.boot.wificountrycode?=00 \
     dalvik.vm.systemuicompilerfilter=speed \
     media.recorder.show_manufacturer_and_model=true
+
+ifneq ($(TARGET_BUILD_VARIANT),user)
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.sys.disable_rescue=true
+endif
 
 TARGET_ENABLE_BLUR ?= true
 ifeq ($(TARGET_ENABLE_BLUR),true)
@@ -169,6 +173,7 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
 
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     AppLocker \
+    ExpressiveLauncher \
     GameSpace \
     Launcher3QuickStep \
     NexusLauncherRelease \
