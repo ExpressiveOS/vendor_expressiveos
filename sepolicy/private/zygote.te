@@ -1,2 +1,6 @@
 allow zygote self:capability sys_nice;
 get_prop(zygote, eos_emoji_prop)
+# Zygote evaluates android:requiredSystemPropertyName on static framework overlays
+# (e.g. ExpressiveLauncherPixelModeOverlay -> persist.sys.expressiveos.launcher)
+# during createImmutableFrameworkIdmapsInZygote().
+get_prop(zygote, eos_system_prop)
