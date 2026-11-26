@@ -1,0 +1,6 @@
+flag_value {
+  package: "android.view.flags"
+  name: "scroll_to_top"
+  state: ENABLED
+  permission: READ_ONLY
+}
