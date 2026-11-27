@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2025 The LineageOS Project
+     SPDX-FileCopyrightText: 2026 The ExpressiveOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
 <resources>
     <string name="config_headlineFontFamily" translatable="false">@*android:string/config_headlineFontFamily</string>
 </resources>

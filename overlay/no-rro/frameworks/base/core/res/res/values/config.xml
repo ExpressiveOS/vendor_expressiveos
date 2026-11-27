@@ -50,9 +50,9 @@
     <string name="config_regularFontFamily" translatable="false">google-sans-flex</string>
 
     <!-- Name of a font family to use for headlines. If empty, falls back to platform default -->
-    <string name="config_headlineFontFamily">google-sans-flex</string>
-    <string name="config_headlineFontFamilyMedium">google-sans-flex</string>
-    <string name="config_headlineFontFeatureSettings">ss03</string>
+    <string name="config_headlineFontFamily" translatable="false">google-sans-flex</string>
+    <string name="config_headlineFontFamilyMedium" translatable="false">google-sans-flex</string>
+    <string name="config_headlineFontFeatureSettings" translatable="false">ss03</string>
 
     <!-- Whether device supports double tap to sleep. This will allow the user to enable/disable
          double tap gestures in non-action areas in the lock screen and launcher workspace to go to

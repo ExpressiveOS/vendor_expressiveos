@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-FileCopyrightText: 2026 The ExpressiveOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
@@ -14,4 +15,10 @@
 
     <!-- The Material3 theme is only enabled IFF this config is true AND the flag `use_material3` is enabled. -->
     <bool name="force_material3">true</bool>
+
+    <!-- Move selected search chip to leading position in M3 filter bar. -->
+    <bool name="move_search_chip_when_selected">true</bool>
+
+    <!-- Show selection checkmark in M3 list/grid items. -->
+    <bool name="show_selection_checkmark">true</bool>
 </resources>

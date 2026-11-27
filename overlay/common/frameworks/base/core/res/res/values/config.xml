@@ -575,6 +575,6 @@
          Color  - `home_wallpaper` (for color extraction) or a comma-separated list of
                   hexadecimal int (#FFcc99,#aabbcc). -->
     <string-array name="theming_defaults" translatable="false">
-        <item>*|TONAL_SPOT|#0049c7</item>
+        <item>*|EXPRESSIVE|home_wallpaper</item>
     </string-array>
 </resources>

@@ -23,4 +23,10 @@
          Do not read this dimen directly. Use {@link SystemBarUtils#getStatusBarHeight} instead.
          -->
     <dimen name="status_bar_height_portrait">28dp</dimen>
+
+    <!-- Material 3 Expressive framework shape radii -->
+    <dimen name="config_buttonCornerRadius">1000dp</dimen>
+    <dimen name="config_dialogCornerRadius">28dp</dimen>
+    <dimen name="config_bottomDialogCornerRadius">28dp</dimen>
+    <dimen name="config_progressBarCornerRadius">1000dp</dimen>
 </resources>
