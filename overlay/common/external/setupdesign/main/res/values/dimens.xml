@@ -5,5 +5,5 @@
 -->
 <resources>
     <!-- Align legacy GLIF button radius with M3 Expressive pill geometry -->
-    <dimen name="sud_glif_button_corner_radius">28dp</dimen>
+    <dimen name="sud_glif_button_corner_radius">1000dp</dimen>
 </resources>

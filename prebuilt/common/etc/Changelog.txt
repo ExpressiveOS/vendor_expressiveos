@@ -1,4 +1,12 @@
 # ExpressiveOS 2.0
 
-ExpressiveOS 2.0 is built directly on Google's Android Open Source Project (AOSP 17).
-Release notes are populated at pack time from expressiveos-cheetah/release-notes/.
+Built on Android 17 (CP2A) with full Material 3 Expressive design cohesion.
+
+## Highlights
+
+- **Material 3 Expressive System-Wide:** Unified Google Sans Flex typography, spring-driven spatial motion, pill buttons, and expressive 28dp dialogs across SystemUI, Settings, Expressive Studio, and first-party apps.
+- **True AMOLED Pure Black Mode:** Strictly monotonic `#000000` canvas and elevated dark surfaces across Settings, Compose apps, Quick Settings, and Expressive Launcher.
+- **Expressive Studio & Monet Tuning:** Default M3 Expressive palette with live chroma, hue, and tone controls, wallpaper-harmonized Studio tiles, and opt-in Holiday Themes.
+- **Status Bar Tap-to-Scroll-Top:** Universal scroll-to-top with 5-second jump-back undo across native lists, RecyclerView, WebView, and Jetpack Compose apps.
+- **Accessibility & Motion Polish:** WCAG 2.2 AA contrast, full 48dp touch targets, TalkBack state announcements, 200% font scaling, and complete reduced-motion support.
+- **Privacy, Audio & Play Integrity:** Built-in App Locker, Sandbox, Expressive Launcher with Quickstep support, and ViPER4Android RE audio processing.

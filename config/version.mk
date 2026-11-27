@@ -35,6 +35,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.expressiveos.build.type=$(EXPRESSIVE_BUILD_TYPE) \
     ro.expressiveos.build.version=$(EXPRESSIVE_BUILD_VERSION) \
     ro.expressiveos.display.version=$(EXPRESSIVE_DISPLAY_VERSION) \
-    ro.expressiveos.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
+    ro.expressiveos.version=$(EXPRESSIVE_MODVERSION) \
     ro.expressiveos.device=$(EOS_BUILD) \
     ro.modversion=$(EXPRESSIVE_MODVERSION)

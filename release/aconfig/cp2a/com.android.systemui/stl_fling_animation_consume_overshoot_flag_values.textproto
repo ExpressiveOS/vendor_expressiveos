@@ -1,6 +1,6 @@
 flag_value {
   package: "com.android.systemui"
-  name: "flashlight_strength"
+  name: "stl_fling_animation_consume_overshoot"
   state: ENABLED
   permission: READ_ONLY
 }

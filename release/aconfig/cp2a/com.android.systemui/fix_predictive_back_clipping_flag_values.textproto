@@ -1,6 +1,6 @@
 flag_value {
   package: "com.android.systemui"
-  name: "volume_redesign"
+  name: "fix_predictive_back_clipping"
   state: ENABLED
   permission: READ_ONLY
 }

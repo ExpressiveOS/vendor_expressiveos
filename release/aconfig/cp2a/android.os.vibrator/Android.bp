@@ -1,0 +1,12 @@
+//
+// Copyright (C) 2026 The ExpressiveOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+aconfig_values {
+    name: "aconfig-values-expressiveos-cp2a-android.os.vibrator-all",
+    package: "android.os.vibrator",
+    srcs: [
+        "*_flag_values.textproto",
+    ],
+}
